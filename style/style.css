@@ -1,7 +1,7 @@
 @font-face {
   font-family: "almas";
   src: url("style/fonts/Almas.Font.otf"),
-    url("/style/fonts/Almas.Font.ttf") format("truetype");
+    url("../style/fonts/Almas.Font.ttf") format("truetype");
 }
 * {
   font-family: "almas" !important;
@@ -50,7 +50,7 @@
 }
 /* header */
 header {
-  background-image: url("/img/bg.jpg") !important;
+  background-image: url("../img/bg.jpg") !important;
   background-size: cover;
   height: 100vh;
   object-fit: cover;
@@ -174,7 +174,7 @@ header .text-header h1 {
 
 /* sweet */
 .sweet {
-  background-image: url("/img/backtwo.jpg");
+  background-image: url("../img/backtwo.jpg");
 
   padding: 200px 0px;
   background-size: cover;
@@ -339,7 +339,7 @@ header .text-header h1 {
 /* hot */
 .hot {
   color: bisque;
-  background-image: url("/img/hot.jpeg");
+  background-image: url("../img/hot.jpeg");
   background-attachment: fixed;
   background-size: cover;
   height: 70vh;
