@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/all.min.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+    />
+
+  <link rel="preload" href="styleMenu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="styleMenu.css"></noscript>  
+
+    <link rel="preload" href="style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="style/style.css"></noscript>  
     <title>menu</title>
-    <link rel="stylesheet" href="styleMenu.css" />
     <link rel="icon" type="image/png" href="img/logo.png" />
   </head>
   <body>
     <div class="loader">
-      <img src="img/loading.gif" alt="" />
+      <img src="img/loading.gif"  alt="" />
     </div>
     <!-- header -->
 
@@ -41,27 +50,25 @@
     </nav>
 
     <!-- end header -->
-<!-- <div class="mojodi">
-  <span class="text-mojodi">این محصول در سبد خرید هست.</span>
-</div> -->
+
     <!-- menu -->
-    
- 
+
     <div class="total-menu">
       <!-- shopping cart -->
       <span class="shop">
-        <i class="fa-solid fa-cart-plus fs-1 display-1 icon-shop"> </i>
+        
+
+       
+        <i class="fa-solid fa-cart-plus fs-1 display-1 icon-shop"></i>
         <span class="badge bg-danger total_counter">0</span>
       </span>
 
       <!-- list shop -->
       <div class="shopping-items">
-
-      
         <!-- kharid -->
         <div class="pay-shopping">
           <span class="text-price">مجموع</span>
-          <span class="price-total">0  تومان </span>
+          <span class="price-total">0 تومان </span>
           <button class="shopping-btn">پرداخت</button>
         </div>
       </div>
@@ -88,7 +95,7 @@
         <ul class="list-ul">
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="1" />
-            <img class="img-list" src="img/americano coffe.jpg" alt="" />
+            <img class="img-list" src="img/americano coffe.jpg" loading="lazy" alt="امریکانو" />
             <div class="detail">
               <span class="title">آمریکانو</span>
               <span class="price">100.000</span>
@@ -97,7 +104,7 @@
           </li>
           <li data-category="cake" class="list-li">
             <input type="hidden" value="2" />
-            <img class="img-list" src="img/cake-shocolati.jpg" alt="" />
+            <img class="img-list" src="img/cake-shocolati.jpg" alt="کیک شکلاتی " loading="lazy" />
             <div class="detail">
               <span class="title">کیک شکلاتی</span>
               <span class="price">60.000</span>
@@ -106,7 +113,7 @@
           </li>
           <li class="list-li">
             <input type="hidden" value="3" />
-            <img class="img-list" src="img/cake-tootfarangi.jpg" alt="" />
+            <img class="img-list" src="img/cake-tootfarangi.jpg" alt="کیک  توت فرنگی" loading="lazy" />
             <div class="detail">
               <span class="title">کیک توت فرنگی</span>
               <span class="price">70.000</span>
@@ -116,7 +123,7 @@
 
           <li data-category="cake" class="list-li">
             <input type="hidden" value="4" />
-            <img class="img-list" src="img/cheese cake.jpg" alt="" />
+            <img class="img-list" src="img/cheese cake.jpg" alt="چیزکیک" loading="lazy" />
             <div class="detail">
               <span class="title">چیز کیک</span>
               <span class="price">90.000</span>
@@ -125,7 +132,7 @@
           </li>
           <li data-category="tea" class="list-li">
             <input type="hidden" value="5" />
-            <img class="img-list" src="img/classic tea.jpg" alt="" />
+            <img class="img-list" src="img/classic tea.jpg" alt="چای کلاسیک" loading="lazy" />
             <div class="detail">
               <span class="title">چای کلاسیک</span>
               <span class="price">50.000</span>
@@ -134,7 +141,7 @@
           </li>
           <li data-category="tea" class="list-li">
             <input type="hidden" value="6" />
-            <img class="img-list" src="img/cold-tea.jpg" alt="" />
+            <img class="img-list" src="img/cold-tea.jpg" alt="چای سرد" loading="lazy" />
             <div class="detail">
               <span class="title">چای سرد</span>
               <span class="price">60.000</span>
@@ -143,7 +150,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="7" />
-            <img class="img-list" src="img/copuchino coffe.jpg" alt="" />
+            <img class="img-list" src="img/copuchino coffe.jpg" alt="کاپوچینو" loading="lazy" />
             <div class="detail">
               <span class="title">کاپوچینو</span>
               <span class="price">95.000</span>
@@ -152,7 +159,7 @@
           </li>
           <li data-category="cake" class="list-li">
             <input type="hidden" value="8" />
-            <img class="img-list" src="img/cupcake-gilas.jpg" alt="" />
+            <img class="img-list" src="img/cupcake-gilas.jpg" alt=" کاپ کیک گیلاس" loading="lazy" />
             <div class="detail">
               <span class="title">کاپ کیک گیلاس</span>
               <span class="price">70.000</span>
@@ -161,7 +168,7 @@
           </li>
           <li data-category="cake" class="list-li">
             <input type="hidden" value="9" />
-            <img class="img-list" src="img/cupcake-shololate.jpg" alt="" />
+            <img class="img-list" src="img/cupcake-shololate.jpg" alt=" کیک شکلاتی" loading="lazy" />
             <div class="detail">
               <span class="title">کاپ کیک شکلاتی</span>
               <span class="price">70.000</span>
@@ -170,7 +177,7 @@
           </li>
           <li data-category="cake" class="list-li">
             <input type="hidden" value="10" />
-            <img class="img-list" src="img/cupcake-tameshk.jpg" alt="" />
+            <img class="img-list" src="img/cupcake-tameshk.jpg" alt=" کاپ کیک تمشک" loading="lazy" />
             <div class="detail">
               <span class="title">کاپ کیک تمشک</span>
               <span class="price">70.000</span>
@@ -182,7 +189,7 @@
             <img
               class="img-list"
               src="img/cupcake-totfarangiva anbe.jpg"
-              alt=""
+             alt=" کاپ کیک توت فرنگی" loading="lazy"
             />
             <div class="detail">
               <span class="title">کاپ کیک توت فرنگی و انبه</span>
@@ -196,7 +203,7 @@
             <img
               class="img-list"
               src="img/cupcake-vanil va shololate.jpg"
-              alt=""
+             alt=" کاپ کیک وانیل و شکلات" loading="lazy"
             />
             <div class="detail">
               <span class="title">کاپ کیک وانیل و شکلات</span>
@@ -206,7 +213,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="13" />
-            <img class="img-list" src="img/englisg coffe.jpg" alt="" />
+            <img class="img-list" src="img/englisg coffe.jpg" alt=" کافی انگلیسی" loading="lazy" />
             <div class="detail">
               <span class="title">قهوه انگلیسی</span>
               <span class="price">100.000</span>
@@ -215,7 +222,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="14" />
-            <img class="img-list" src="img/essperso coffe.jpg" alt="" />
+            <img class="img-list" src="img/essperso coffe.jpg"alt=" کافی اسپرسو loading="lazy" />
             <div class="detail">
               <span class="title">اسپرسو</span>
               <span class="price">80.000</span>
@@ -224,7 +231,7 @@
           </li>
           <li data-category="tea" class="list-li">
             <input type="hidden" value="15" />
-            <img class="img-list" src="img/green-tea.jpg" alt="" />
+            <img class="img-list" src="img/green-tea.jpg" alt="چای سبز " loading="lazy" />
             <div class="detail">
               <span class="title">چای سبز</span>
               <span class="price">60.000</span>
@@ -233,7 +240,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="16" />
-            <img class="img-list" src="img/hot chocolate.jpg" alt="" />
+            <img class="img-list" src="img/hot chocolate.jpg" alt=" هات چاکلت" loading="lazy" />
             <div class="detail">
               <span class="title">هات چاکلت</span>
               <span class="price">90.000</span>
@@ -242,7 +249,7 @@
           </li>
           <li data-category="cold-coffe" class="list-li">
             <input type="hidden" value="17" />
-            <img class="img-list" src="img/ice americano.jpg" alt="" />
+            <img class="img-list" src="img/ice americano.jpg" alt=" ایس امریکانو" loading="lazy" />
             <div class="detail">
               <span class="title">آیس آمریکانو</span>
               <span class="price">100.000</span>
@@ -251,7 +258,7 @@
           </li>
           <li data-category="cold-coffe" class="list-li">
             <input type="hidden" value="18" />
-            <img class="img-list" src="img/ice karamel.jpg" alt="" />
+            <img class="img-list" src="img/ice karamel.jpg" alt="آیس کارامل" loading="lazy" />
             <div class="detail">
               <span class="title">آیس کارامل</span>
               <span class="price">100.000</span>
@@ -260,7 +267,7 @@
           </li>
           <li data-category="cold-coffe" class="list-li">
             <input type="hidden" value="19" />
-            <img class="img-list" src="img/ice vanila latte.jpg" alt="" />
+            <img class="img-list" src="img/ice vanila latte.jpg" alt=" آیس وانیل" loading="lazy" />
             <div class="detail">
               <span class="title">آیس وانیل لته</span>
               <span class="price">120.000</span>
@@ -269,7 +276,7 @@
           </li>
           <li data-category="cold-coffe" class="list-li">
             <input type="hidden" value="20" />
-            <img class="img-list" src="img/icee mpca.jpg" alt="" />
+            <img class="img-list" src="img/icee mpca.jpg" alt="آیس موکا" loading="lazy" />
             <div class="detail">
               <span class="title">آیس موکا</span>
               <span class="price">100.000</span>
@@ -278,7 +285,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="21" />
-            <img class="img-list" src="img/latte coffe.jpg" alt="" />
+            <img class="img-list" src="img/latte coffe.jpg" alt="کافی لته " loading="lazy" />
             <div class="detail">
               <span class="title">لته</span>
               <span class="price">100.000</span>
@@ -288,7 +295,7 @@
 
           <li data-category="tea" class="list-li">
             <input type="hidden" value="22" />
-            <img class="img-list" src="img/limo-darchin tea.jpg" alt="" />
+            <img class="img-list" src="img/limo-darchin tea.jpg" alt=" چایی لیمو دارچین" loading="lazy" />
             <div class="detail">
               <span class="title">چای لیمو دارچین</span>
               <span class="price">90.000</span>
@@ -297,7 +304,7 @@
           </li>
           <li data-category="tea" class="list-li">
             <input type="hidden" value="23" />
-            <img class="img-list" src="img/masala tea.jpg" alt="" />
+            <img class="img-list" src="img/masala tea.jpg" alt=" چایی ماسالا" loading="lazy"/>
             <div class="detail">
               <span class="title">ماسالا</span>
               <span class="price">70.000</span>
@@ -306,7 +313,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="24" />
-            <img class="img-list" src="img/moca coffe.jpg" alt="" />
+            <img class="img-list" src="img/moca coffe.jpg" alt=" کافی موکا" loading="lazy" />
             <div class="detail">
               <span class="title">موکا</span>
               <span class="price">70.000</span>
@@ -315,7 +322,7 @@
           </li>
           <li data-category="warm-coffe" class="list-li">
             <input type="hidden" value="25" />
-            <img class="img-list" src="img/nutella latte.jpg" alt="" />
+            <img class="img-list" src="img/nutella latte.jpg" alt="لته نوتلا" loading="lazy" />
             <div class="detail">
               <span class="title">لته نوتلا</span>
               <span class="price">100.000</span>
@@ -325,20 +332,10 @@
         </ul>
       </div>
     </div>
- 
 
     <!--end menu -->
   </body>
-  <script src="js/all.min.js"></script>
-  <script src="js/script.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"
-  ></script>
+
+  <script src="js/script.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
