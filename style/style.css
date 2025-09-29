@@ -50,13 +50,15 @@ a {
 }
 /* header */
 header {
-  background-image: url("../img/bg.jpg") !important;
+  position: relative;
+  background-image: url("../img/bg.webp") !important;
   background-size: cover;
+  background-position: center;
   height: 100vh;
-  object-fit: cover;
   background-repeat: no-repeat;
   direction: rtl;
 }
+
 nav {
   background-color: rgba(255, 191, 108, 0.522);
   display: flex !important;
@@ -174,7 +176,7 @@ header .text-header h1 {
 
 /* sweet */
 .sweet {
-  background-image: url("../img/backtwo.jpg");
+  background-image: url("../img/backtwo.webp");
 
   padding: 200px 0px;
   background-size: cover;
@@ -338,7 +340,7 @@ header .text-header h1 {
 /* hot */
 .hot {
   color: bisque;
-  background-image: url("../img/hot.jpeg");
+  background-image: url("../img/hot.webp");
   background-attachment: fixed;
   background-size: cover;
   height: 70vh;
